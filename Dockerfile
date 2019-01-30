@@ -14,6 +14,6 @@ RUN npm install -g @angular/cli@7.1.4
 
 CMD ng build --prod
 
-COPY dist/ /usr/src/app
+COPY . /usr/src/app
 
 RUN ["npm", "start"]
